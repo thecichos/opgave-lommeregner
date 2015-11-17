@@ -1,0 +1,24 @@
+.calc {
+	display: flex;
+}
+.grid {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.line #sum {
+	padding: 10px;
+	float: right;
+}
+.grid .number {
+	padding: 20px;
+	margin: 5px;
+}
+.grid .modifier {
+	padding: 20px;
+	margin: 5px;
+}
+.grid #n0 {
+	margin: 5px;
+	clear: both;
+}

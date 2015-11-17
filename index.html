@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="Master.css">
+	<title>lommeregner yir</title>
+</head>
+
+<body>
+	<script src="Master.js"></script>
+	<form action="form.asp" class="calc">
+		<div class="grid">
+			<div class="line">
+				<input type="text" name="numbers" id="numbers">
+				<input type="button" name="sum" id="sum" value="=" onclick="add(document.getElementById('sum').value)">
+			</div>
+			<div class="line">
+				<input type="button" name="1" id="n1" value="1" onclick="add(document.getElementById('n1').value)" class="number">
+				<input type="button" name="2" id="n2" value="2" onclick="add(document.getElementById('n2').value)" class="number">
+				<input type="button" name="3" id="n3" value="3" onclick="add(document.getElementById('n3').value)" class="number">
+				<input type="button" name="+" id="+" value="+" onclick="add(document.getElementById('+').value)" class="number">
+			</div>
+			<div class="line">
+				<input type="button" name="4" id="n4" value="4" onclick="add(document.getElementById('n4').value)" class="number">
+				<input type="button" name="5" id="n5" value="5" onclick="add(document.getElementById('n5').value)" class="number">
+				<input type="button" name="6" id="n6" value="6" onclick="add(document.getElementById('n6').value)" class="number">
+				<input type="button" name="-" id="-" value="-" onclick="add(document.getElementById('-').value)" class="number">
+			</div>
+			<div class="line">
+				<input type="button" name="7" id="n7" value="7" onclick="add(document.getElementById('n7').value)" class="number">
+				<input type="button" name="8" id="n8" value="8" onclick="add(document.getElementById('n8').value)" class="number">
+				<input type="button" name="9" id="n9" value="9" onclick="add(document.getElementById('n9').value)" class="number">
+				<input type="button" name="/" id="/" value="/" onclick="add(document.getElementById('/').value)" class="number">
+			</div>
+			<div class="line">
+				<input type="button" name="0" id="n0" value="0" onclick="add(document.getElementById('n0').value)" class="number">
+				<input type="button" name="," id="n," value="." onclick="add(document.getElementById('n,').value)" class="number">
+				<input type="button" name="*" id="*" value="*" onclick="add(document.getElementById('*').value)" class="number">
+			</div>
+		</div>
+	</form>
+
+</body>
+
+</html>
