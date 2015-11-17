@@ -1,9 +1,22 @@
+// document.getElementById('numbers').disabled;
+
+function uniCharCode(event) {
+	var key = event.keyCode;
+	if (key === 13) {
+		add("=")
+	} else if (key === 67) {
+		document.getElementById('numbers').value = null;
+	} else {
+		var num = String.fromCharCode(key);
+		add(num);
+	}
+}
+
 function add(number) {
-	if (number === "=") {
+	if (number === "=" || number === "") {
 		calc();
 	} else {
 		document.getElementById('numbers').value += number;
-		return;
 	}
 }
 

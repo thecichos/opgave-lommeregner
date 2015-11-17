@@ -7,12 +7,15 @@
 	<title>lommeregner yir</title>
 </head>
 
-<body>
+<body onkeypress="uniCharCode(event)">
 	<script src="Master.js"></script>
-	<form action="form.asp" class="calc">
+	<form class="calc">
 		<div class="grid">
 			<div class="line">
 				<input type="text" name="numbers" id="numbers">
+				<script>
+					document.getElementById('numbers').disabled
+				</script>
 				<input type="button" name="sum" id="sum" value="=" onclick="add(document.getElementById('sum').value)">
 			</div>
 			<div class="line">
