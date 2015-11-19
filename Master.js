@@ -31,7 +31,7 @@ function calc() {
 		document.getElementById('numbers').value = Math.round((Number(arr[0]) - Number(arr[1])) * 1e12) / 1e12;
 	} else if (result == "/") {
 		if (arr[0] == 0 || arr[1] == 0) {
-			alert("fuck you");
+			alert("please do not divide zero, the universe will die");
 		} else {
 			document.getElementById('numbers').value = Math.round((Number(arr[0]) / Number(arr[1])) * 1e12) / 1e12;
 		}
